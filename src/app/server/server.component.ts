@@ -10,7 +10,7 @@ export class ServerComponent{
     serverStatus : String = 'offline';
     allowAddServer : boolean = false;
     createServerStatus : String = 'Server Existing';
-    inputName = '';
+    inputName = 'Server1';
 
     constructor(){
         setTimeout(() => {
@@ -23,7 +23,7 @@ export class ServerComponent{
     }
 
     onAddServer(){
-        this.createServerStatus = 'New Server Added';
+        this.createServerStatus = 'New Server Added, with name : ' + this.inputName;
     }
 
     onInputServer(event : any){

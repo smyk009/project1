@@ -1,4 +1,5 @@
 <p>{{ inputName }} with id : {{serverId}} is currently {{getServerStatus()}}</p>
 <button class="btn btn-primary" [disabled] = "!allowAddServer" (click) = "onAddServer()">Add Server</button>
 <input type="text" class="form-control" (input) = "onInputServer($event)">
+<input type="text" class="form-control" [(ngModel)] = "inputName">
 <p>{{ createServerStatus}}</p>
